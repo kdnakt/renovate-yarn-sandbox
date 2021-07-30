@@ -1,0 +1,18 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "baseBranches": ["master"],
+    "extends": [
+        "config:base",
+        ":semanticCommitTypeAll(chore)"
+    ],
+    "minor": {
+        "groupName": "all"
+    },
+    "yarn": {
+        "enabled": true
+    },
+    "enabledManagers": [
+        "yarn"
+    ],
+    "platform": "github"
+}
