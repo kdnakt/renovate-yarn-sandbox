@@ -10,4 +10,4 @@ jobs:
           node-version: '14'
           cache: 'yarn'
       - run: yarn global add renovate
-      - run: renovate kdnakt/renovate-yarn-sandbox --password $RENOVATE_PAT
+      - run: GITHUB_TOKEN=$RENOVATE_PAT renovate kdnakt/renovate-yarn-sandbox
